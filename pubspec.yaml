@@ -1,5 +1,5 @@
 name: para_jugar_island
-description: "A new Flutter project."
+description: "Soundboard para acompañar el juego de mesa Survivor Island."
 publish_to: 'none'
 version: 0.1.0+1
 
@@ -7,8 +7,10 @@ environment:
   sdk: ^3.13.5
 
 dependencies:
+  audioplayers: ^6.8.1
   flutter:
     sdk: flutter
+  wakelock_plus: ^1.8.1
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +19,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/sounds/
