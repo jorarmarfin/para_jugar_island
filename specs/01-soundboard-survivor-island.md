@@ -1,6 +1,6 @@
 # SPEC 01 — Soundboard para Survivor Island
 
-**Estado:** Draft
+**Estado:** Approved
 **Depende de:** ninguno
 **Fecha:** 2026-10-15
 **Objetivo:** App Flutter "Para Jugar Island" con una cuadrícula de botones de colores vivos que reproducen en bucle sonidos propios (tiburón, kayak, volcán, terremoto, olas, balsa, hombres corriendo, hombres gritando) hasta que se detengan, para ambientar el juego de mesa Survivor Island.
