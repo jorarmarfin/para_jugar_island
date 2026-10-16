@@ -1,16 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-void main() {
-  runApp(const MainApp());
+import 'pages/home_page.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  runApp(const ParaJugarIslandApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class ParaJugarIslandApp extends StatelessWidget {
+  const ParaJugarIslandApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+    return MaterialApp(
+      title: 'Para Jugar Island',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: const Color(0xFF0B1E3F),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF00E5FF),
+          brightness: Brightness.dark,
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFFFF6D00),
+          foregroundColor: Colors.white,
+        ),
+      ),
+      home: const HomePage(),
     );
   }
 }
